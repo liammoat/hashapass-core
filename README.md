@@ -1,7 +1,7 @@
 # Hashapass
 A port of the password generation algorithm used by hashapass.com
 
-> **Note:** This tool is not affilated with [hashapass.com](http://hashapass.com/). I have created it as a tool for generating compatible passwords.
+> **Note:** This tool is not affiliated with [hashapass.com](http://hashapass.com/). I have created it as a tool for generating compatible passwords.
 
 ## Getting Started
 Install ```hashapass``` with [npm](https://npmjs.org/).
@@ -11,7 +11,7 @@ npm install hashapass
 ```
 
 ### Usage
-By default ```hashapass``` will return a **8** character substring of the password:
+By default ```hashapass``` will return an **8** character substring of the password:
 ```
 #!javascript
 var hashapass = require('hashapass');
