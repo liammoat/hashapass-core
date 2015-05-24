@@ -1,0 +1,28 @@
+{
+  "name": "hashapass",
+  "version": "1.0.0",
+  "description": "A port of the password generation algorithm used by hashapass.com",
+  "author": "Liam Moat <contact@liammoat.com>",
+  "main": "src/hashapass.js", 
+  "url": "https://bitbucket.org/liammoat/hashapass",
+  "homepage": "https://bitbucket.org/liammoat/hashapass",
+  "repository": {
+    "type": "git",
+    "url": "git://bitbucket.org/liammoat/hashapass.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/liammoat/hashapass/issues"
+  },
+  "keywords": [
+    "hashapass",
+    "password"
+  ], 
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "jasmine": "^2.1.1"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://bitbucket.org/liammoat/hashapass/raw/master/LICENCE"
+  }
+}
