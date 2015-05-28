@@ -25,6 +25,7 @@ hashapass.generate('parameter', 'master_pass', {
   len: 14
 }); // o3NEqcO8ndcotT 
 ```
+> **Note:** By default the length is 8 characters. By changing this, the password will no longer be compatible with [hashapass.com](http://hashapass.com/).
 
 ## License
 Copyright (c) 2015 Liam Moat
