@@ -17,7 +17,8 @@ describe('hashapass', function () {
   describe('comparison', function () {
     var benchmarks = [
       { parameter: 'hello', master: 'world', expected: 'Wgxn2SLe' },
-      { parameter: 'I_4m_a_TEST', master: 'testTEST123', expected: '7zDZsNAN' }
+      { parameter: 'I_4m_a_TEST', master: 'testTEST123', expected: '7zDZsNAN' },
+      { parameter: 'パスワード', master: 'パスワード', expected: 'XNtJXy/w' }
     ];
     
     benchmarks.forEach(function (bm) {
