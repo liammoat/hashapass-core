@@ -16,12 +16,24 @@ steps:
   displayName: 'Install Node.js'
 
 - task: Npm@1
-  displayName: 'npm install'
+  displayName: 'Install Packages'
   inputs:
     command: install
 
 - script: 'npm run build'
-  displayName: 'npm run build'
+  displayName: 'Build'
 
 - script: 'npm run test'
-  displayName: 'npm run test'
+  displayName: 'Test'
+
+- task: ArchiveFiles@2
+  displayName: 'Archive Files'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Build Artifacts'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: 'drop'
