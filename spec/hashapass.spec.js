@@ -1,4 +1,4 @@
-var hashapass = require('../src/hashapass');
+var hashapass = require('../dist/hashapass');
 
 var PARAMETER = 'google';
 var MASTER = '4_Very_STR0NG_P455W0RD';
